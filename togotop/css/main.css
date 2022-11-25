@@ -48,7 +48,22 @@ a {
   cursor: pointer;
 }
 
+.section-title {
+  font-size: 45px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.section-title_green {
+  color: var(--green);
+}
+
 /* HEADER */
+
+.main-header {
+  margin-bottom: 104px;
+}
 
 .main-header__header {
   display: flex;
@@ -238,3 +253,104 @@ a {
 /* STATS */
 
 /* HEADER */
+
+/* OPPORTUNITIES */
+
+.main__opportunities {
+  margin-bottom: 95px;
+}
+
+.opportunities__title {
+  margin-bottom: 61px;
+}
+
+/* OPPORTUNITIES */
+
+/* FEATURES */
+
+.main__features {
+  margin-bottom: 137px;
+}
+
+.features__title {
+  margin-bottom: 54px;
+}
+
+/* TABS */
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 60px 57px;
+  background-color: #191919;
+  border-radius: 20px;
+}
+
+.tabs__header {
+  margin-bottom: 52px;
+}
+
+.tabs__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 29px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs__element {
+  display: inline-block;
+  padding: 14px;
+  min-width: 274px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  border: 3px solid var(--purple);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.tabs__element_active {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.tabs__content {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 98px;
+}
+
+.tabs__info {
+  max-width: 444px;
+}
+
+.tabs__title {
+  margin-bottom: 54px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+.tabs__text {
+  margin-top: 33px;
+  font-size: 20px;
+  line-height: 147%;
+  font-weight: 700;
+}
+
+.tabs__text_purple {
+  color: var(--purple);
+}
+
+.tabs__text_green {
+  color: var(--green);
+}
+
+/* TABS */
+
+/* FEATURES */
