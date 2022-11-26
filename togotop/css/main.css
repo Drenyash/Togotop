@@ -1,20 +1,25 @@
 @font-face {
-  font-family: "Circe_f", sans-serif;
+  font-family: "Circe";
   font-weight: 400;
-  src: url(../fonts/Circe/Circe-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+  src: local("Circe"), local("Circe"), url("../fonts/Circe/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe/Circe-Regular.woff") format("woff"); 
 }
 
 @font-face {
-  font-family: "Circe_f", sans-serif;
+  font-family: "Circe";
   font-weight: 700;
-  src: url(../fonts/Circe/Circe-Bold.woff2);
-  src: url(../fonts/Circe/Circe-Bold.woff);
+  font-style: normal;
+  font-display: swap;
+  src: local("Circe"), local("Circe"), url("../fonts/Circe/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe/Circe-Bold.woff") format("woff"); 
 }
 
 @font-face {
-  font-family: "Circe_f", sans-serif;
+  font-family: "Circe";
   font-weight: 800;
-  src: url(../fonts/Circe/Circe-ExtraBold.woff2);
+  font-style: normal;
+  font-display: swap;
+  src: local("Circe"), local("Circe"), url("../fonts/Circe/Circe-ExtraBold.woff2") format("woff2"), url("../fonts/Circe/Circe-ExtraBold.woff") format("woff"); 
 }
 
 * {
@@ -38,7 +43,7 @@ h1,h2,h3,h4,h5,h6, p {
 }
 
 body {
-  font-family: 'Circe_f', sans-serif;
+  font-family: 'Circe', sans-serif;
   font-size: 20px;
   line-height: 1.50;
   font-weight: 400;
@@ -100,6 +105,12 @@ a {
   margin-bottom: 104px;
 }
 
+.main-header__description {
+  font-family: "Manrope";
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .main-header__header {
   display: flex;
   justify-content: space-between;
@@ -118,7 +129,7 @@ a {
 }
 
 .main-header__intro {
-  margin-bottom: 61px;
+  margin-bottom: 41px;
 }
 
 /* USER NAVIGATION */
@@ -132,6 +143,7 @@ a {
 .user-navigation__link {
   display: inline-block;
   padding: 10px 43px;
+  font-family: "Manrope";
   font-size: 14px;
   font-weight: 700;
   background: var(--black);
@@ -213,6 +225,7 @@ a {
 .main-intro__title {
   margin-top: 11px;
   margin-bottom: 51px;
+  line-height: 139%;
   font-size: 50px;
   letter-spacing: 0.03em;
 }
@@ -326,6 +339,12 @@ a {
   padding: 60px 118px;
 }
 
+.opportunities__head {
+  margin-bottom: 44px;
+  font-size: 35px;
+  line-height: 45px;
+}
+
 .opportunities__body {
   max-width: 431px;
 }
@@ -407,6 +426,7 @@ a {
   padding: 14px;
   min-width: 274px;
   text-align: center;
+  font-family: "Inter";
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
@@ -516,6 +536,7 @@ a {
 
 .about-list__title {
   margin-bottom: 5px;
+  font-family: "Circe";
   font-size: 25px;
   line-height: 147%;
   font-weight: 800;
@@ -579,7 +600,7 @@ a {
 }
 
 .suitable__status {
-  font-family: "Circe_f", sans-serif;
+  font-family: "Circe", sans-serif;
   font-size: 25px;
   line-height: 147%;
   font-weight: 800;
@@ -609,6 +630,12 @@ a {
 
 .suitable__item_active .suitable__status {
   margin-bottom: 11px;
+}
+
+.suitable__item_active, .suitable__item:nth-child(1) {
+  background-image: url(../img/icons/i-card-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 81px right 17px;
 }
 
 .suitable__item_active .suitable__description {
@@ -675,6 +702,10 @@ a {
   flex-wrap: wrap;
   gap: 18px;
   margin-left: -60px;
+}
+
+.reveiews__btn {
+  padding: 21px 65px;
 }
 
 .reviews__info {
@@ -810,6 +841,7 @@ a {
 
 .promo__button {
   margin: 0 auto;
+  padding: 21px 61px;
 }
 
 /* PROMO */
@@ -850,11 +882,12 @@ a {
 }
 
 .footer-info__item_white {
+  font-weight: 700;
   color: #fff;
 }
 
 .footer-info__link {
-  font-family: "manrope";
+  font-family: "Manrope";
   display: inline-block;
   margin-top: auto;
   font-size: 15px;
@@ -885,10 +918,15 @@ a {
   list-style: none;
 }
 
+.footer-nav__inner li {
+  line-height: 23px;
+}
+
 .footer-nav__item {
   display: flex;
   flex-direction: column;
   min-height: 217px;
+  font-family: "Manrope";
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
@@ -934,6 +972,7 @@ a {
 
 .copy {
   margin-bottom: 59px;
+  font-family: "Arial";
 }
 
 .copy__wrapper {
