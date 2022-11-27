@@ -14,6 +14,11 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
   
@@ -27,6 +32,9 @@
         <div class="user-navigation main-header__user-navigation">
           <a href="#" class="user-navigation__link user-navigation__link_login">Войти</a> 
           <a href="#" class="user-navigation__link user-navigation__link_register">Зарегистрироваться</a>
+        </div>
+        <div class="main-burger main-header__burger">
+          <span class="main-burger__item"></span>
         </div>
       </div>
       <nav class="main-nav main-header__nav">
@@ -47,7 +55,7 @@
       </nav>
       <div class="main-intro main-header__intro">
         <div class="main-intro__col">
-          <h1 class="main-intro__title">С TOGOTOP <span class="main-intro__title_purple">ваши товары</span> всегда будут в <span class="main-intro__title_green">ТОПе</span></h1>
+          <h1 class="main-intro__title">С TOGOTOP <span class="main-intro__title_purple">ваши товары</span> всегда будут <span class="main-intro__title_green">в ТОПе</span></h1>
           <p class="main-intro__text">Полный набор инструментов для продвижения на Wildberries, которые выведут ваш бизнес на новый уровень.</p>
           <button class="button button_action main-intro__button">Попробовать бесплатно</button>
         </div>
@@ -426,5 +434,91 @@
     </div>
   </footer>
 
+  <script>
+    $('.partners__list').slick({
+      dots: false,
+      dotsClass: "slide-dots partners__control",
+      arrows: false,
+      draggable: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    $('.main-stats__wrapper').slick({
+      dots: false,
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 871,
+          settings: {
+            dotsClass: "slide-dots main-stats__control",
+            draggable: true,
+            dots: true,
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            dotsClass: "slide-dots main-stats__control",
+            draggable: true,
+            dots: true,
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+    $('.about-list').slick({
+      dots: false,
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      slidesToShow: 3,
+      vertical: true,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            dotsClass: "slide-dots main-stats__control",
+            draggable: true,
+            vertical: false,
+            dots: true,
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
